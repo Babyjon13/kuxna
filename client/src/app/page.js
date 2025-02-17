@@ -1,8 +1,9 @@
 'use client'
 import Image from "next/image";
 import styles from "./page.module.css";
-import Ingredients from "./scomponent";
 import { useState } from "react";
+import Link from "next/link";
+import recipes from "./recipes.json"
   
 const ingredients = {
     Сахар: { amount: 100, unit: 'г' },
@@ -13,7 +14,6 @@ const ingredients = {
   };
   
   export default function Home() {
-    
   return (
     <>
       <header className={styles.header}>
@@ -26,11 +26,26 @@ const ingredients = {
         <a className={styles.a}>zxcvvb</a>          
         </div>
       </header>
-
       <div className={styles.gg}>
       <main className={styles.main}>
-       
-      <Ingredients ingredients = {ingredients}/>
+       <div>
+        <ul>
+          {recipes.map((item,index) =>(
+            <div key={index} className={styles.lenta}>
+              <Link href={`recipe/${index}`}>
+              <div><h1>{item.title}</h1>
+              <p>{item.description}</p>
+              <Image 
+              src={recipes[index].image}
+              width={250}
+              height={250}
+              alt={index}
+              /></div>
+              </Link>
+            </div>
+          ))}
+        </ul>
+       </div>
       </main>
       <nav className={styles.nav}>
         <strong>asdasd</strong>
