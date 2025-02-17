@@ -1,0 +1,49 @@
+recipes:
+{
+    "title": "",
+    "image": "",
+    "author": "",
+    "description": "",
+    "preparation": "",
+    "ingredients": [
+      {
+        "name": "",
+        "value": "",
+        "unit": ""
+      },
+      {
+        "name": "",
+        "value": [
+            {
+                "ot": "",
+                "do": ""
+            }
+        ],
+        "unit": ""
+      }
+    ],
+    "portion": "",
+    "timeToCome": "",
+    "nutritionalValue": [
+        {
+            "kkal": "",
+            "bel": "",
+            "fats": "",
+            "carbs": ""
+        }
+    ]
+    "instructions": [
+      {
+        "stepDescription": "",
+        "stepImage": ""
+      },
+      {
+        "stepDescription": ""
+      }
+    ],
+    "category": "",
+    "tags": []
+}
+
+
+
